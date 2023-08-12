@@ -6,6 +6,7 @@
     font-family: 'Jost', sans-serif;
     font-size: 16px;
 }
+
 header {
     position: fixed;
     top: 0;
@@ -21,10 +22,12 @@ header {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
     transition: all 0.5s ease-in-out;
 }
+
 header.sticky {
     padding: 10px 0px;
     border-bottom: none;
 }
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -203,11 +206,13 @@ header.sticky {
 .carousel-item {
     padding-top: 90px;
 }
+
 #carousel__content .carousel-caption {
     /* top: 50%;
     left: 50%;
     transform: translate(-48.5%, -50%); */
 }
+
 #carousel__content .carousel-caption h1 {
     font-size: 66px;
     line-height: 76px;
@@ -215,6 +220,7 @@ header.sticky {
     color: #fff;
     /* text-align: left; */
 }
+
 #carousel__content .carousel-caption p {
     color: #fff;
     font-weight: 400;
@@ -223,6 +229,7 @@ header.sticky {
     font-size: 1.2em;
     /* text-align: left; */
 }
+
 #carousel__content .carousel-caption button:nth-of-type(1) {
     padding: 12px 35px;
     font-size: 18px;
@@ -235,6 +242,7 @@ header.sticky {
     margin-top: 50px;
     margin-right: 10px;
 }
+
 #carousel__content .carousel-caption button:nth-of-type(2) {
     padding: 12px 35px;
     font-size: 18px;
@@ -248,13 +256,16 @@ header.sticky {
     margin-right: 10px;
     transition: all 0.5s;
 }
+
 #carousel__content .carousel-caption button:hover:nth-of-type(2) {
     color: #189A46;
     background-color: #fff;
 }
+
 .carousel__main {
     position: relative;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -264,15 +275,151 @@ header.sticky {
     background-color: #00000090;
     z-index: 1;
 }
+
 #carousel__content .carousel-indicators li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin-right: 10px;
 }
+
 #carousel__content .carousel-indicators li:hover {
     width: 30px;
     height: 10px;
     border-radius: 10px;
     background-color: #189A46;
+}
+
+
+
+.title {
+    margin-bottom: 4rem;
+}
+
+.title h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #f53626;
+}
+
+.title h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+}
+
+/* plans */
+
+.plans {
+    background-color: #936be70d;
+    /* background-color: black; */
+}
+
+.plans__item {
+    background-color: white;
+    padding: 3.5em 2.5em;
+    border-radius: 10px;
+    align-self: center;
+    overflow: hidden;
+    /* padding: 0; */
+}
+
+.plans__item .plans__top h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.plans__item .plans__top h4 {
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #189a46;
+    display: block;
+}
+
+.plans__item .plans__top h5 {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    color: #189a46;
+    border-radius: 10px;
+}
+
+.plans__item .plans__top label {
+    font-size: 25px;
+    vertical-align: text-top;
+}
+
+.plans__item .plans__top span {
+    font-size: 16px;
+    line-height: 25px;
+    color: #999;
+    font-weight: 400;
+}
+
+.plans__item .plans__bottom p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+    color: #304659;
+    margin-bottom: 5px;
+}
+
+.plans__item .plans__bottom button {
+    color: #fff;
+    background-color: #189A46;
+    border: 1px solid #189A46;
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    margin-top: 32px;
+}
+
+.plans__item.active .plans__top {
+    padding: 3em 2.5em .5em;
+    background-color: #189A46;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.plans__item.active .plans__bottom {
+    padding: 3.5em 2.5em;
+}
+
+.plans__item.active {
+    margin: 0;
+    box-shadow: 0 10px 30px 0 rgba(17, 17, 17, 0.09);
+    z-index: 1;
+    padding: 0;
+}
+
+.plans__item.active .plans__top h4,
+.plans__item.active .plans__top h3,
+.plans__item.active .plans__top span,
+.plans__item.active .plans__top label {
+    color: white;
 }
