@@ -297,14 +297,13 @@ header.sticky {
 }
 
 .title h3 {
-    text-align: center;
-    text-transform: capitalize;
-    margin-bottom: 10px;
-    font-size: 25px;
-    line-height: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
+
     color: #f53626;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
 }
 
 .title h1 {
@@ -314,11 +313,26 @@ header.sticky {
     text-transform: capitalize;
 }
 
+.middle-section {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 /* plans */
 
 .plans {
     background-color: #936be70d;
     /* background-color: black; */
+}
+
+.plans .title h3 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .plans__item {
@@ -422,4 +436,120 @@ header.sticky {
 .plans__item.active .plans__top span,
 .plans__item.active .plans__top label {
     color: white;
+}
+
+
+/* nutrition */
+.nutrition .title p {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.nutrition__video {
+    position: relative;
+}
+
+.nutrition__video a {
+    position: absolute;
+    vertical-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nutrition__video a span {
+    background: #fff;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+}
+
+.nutrition__video a span i {
+    color: #189a46;
+}
+
+.nutrition__video img {
+    border-radius: 10px;
+}
+
+#small-dialog {
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+
+.mfp-close,
+.mfp-close:active {
+    top: -40px;
+}
+
+/**
+     * Fade-zoom animation for first dialog
+     */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.95;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
+
+
+
+
+
+
+/* Animation */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
 }
