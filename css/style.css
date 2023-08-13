@@ -634,6 +634,10 @@ div#small-dialog iframe {
 }
 
 /* custom owl carousel */
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 50px;
+}
+
 .owl-theme .owl-dots .owl-dot span {
     outline: none;
     transition: all .3s;
@@ -641,7 +645,6 @@ div#small-dialog iframe {
 
 .owl-theme .owl-dots .owl-dot:focus {
     outline: none;
-
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -652,6 +655,57 @@ div#small-dialog iframe {
 }
 
 
+/* subscribe */
+.subscribe .container {
+    padding: 24px 25px;
+}
+
+.subscribe .subscribe-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    margin-bottom: .5rem;
+}
+
+.subscribe p:first-of-type {
+    font-size: 1.2em;
+    line-height: 28px;
+    color: #696969;
+}
+
+.subscribe .subscribe-content {
+    max-width: 650px;
+}
+
+.subscribe .subscribe-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe .subscribe-form input {
+    font-size: 16px;
+    color: var(--title-color);
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subscribe .subscribe-form button {
+    flex-basis: 27%;
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+}
 
 
 
