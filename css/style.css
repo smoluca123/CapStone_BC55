@@ -707,6 +707,12 @@ div#small-dialog iframe {
     border-radius: 10px;
 }
 
+.subscribe .subscribe-form input:focus {
+    /* outline: #189A46; */
+    border-color: #189A46;
+    box-shadow: none;
+}
+
 
 
 
