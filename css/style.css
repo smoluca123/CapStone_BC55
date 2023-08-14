@@ -714,11 +714,136 @@ div#small-dialog iframe {
 }
 
 
+/* footer */
+.footer {
+    background-color: #111;
+}
+
+.footer .container {
+    padding: 16px 25px;
+}
+
+.footer .footer-title h3 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer .footer-top h4,
+.footer .footer-top h4 a,
+.footer .footer-top a {
+    /* display: flex; */
+    font-weight: bold;
+    font-size: 16px;
+    color: #696969;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-top li {
+    margin-bottom: 5px;
+}
+
+.footer .footer-top h4 span,
+.footer .footer-top h4 a,
+.footer .footer-top a {
+    font-weight: normal;
+    transition: all .3s;
+}
+
+.footer-categories a,
+.footer-meta a {
+    display: block;
+}
+
+.footer .footer-top h4 a:hover,
+.footer .footer-top a:hover {
+    color: white;
+}
+
+.footer .social-icons {
+    margin-top: 3px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.footer .social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 0;
+}
+
+.footer .social-icons i {
+    font-size: 16px;
+}
 
 
+.footer .footer-bottom {
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+    margin-top: 3rem;
+    padding: 24px 0;
+}
+
+.footer .footer-bottom p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #696969;
+    margin-bottom: 0;
+}
+
+.footer .footer-bottom p a {
+    color: #f53626;
+    opacity: 0.9;
+}
 
 
+/* Back To Top */
+.backToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    z-index: 99;
+    visibility: hidden;
+}
 
+.backToTopBtn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background: #189A46;
+    padding: 0;
+    line-height: 36px;
+    border-radius: 50px;
+    transition: 0.3s ease-out;
+}
+
+.backToTopBtn:focus {
+    outline: none;
+    border: none;
+}
+
+.backToTopBtn:hover {
+    transform: translateY(-5px);
+}
+
+.cd-top--is-visible {
+    /* // back-to-top button visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    /* // reduce button opacity if user keeps scrolling */
+    opacity: 1;
+}
 
 
 
