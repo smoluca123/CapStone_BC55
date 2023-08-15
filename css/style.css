@@ -400,7 +400,8 @@ header.sticky {
     font-weight: normal;
     align-self: center;
     padding-top: 6px;
-    color: #304659;
+    /* color: #304659; */
+    color: #696969;
     margin-bottom: 5px;
 }
 
@@ -448,7 +449,8 @@ header.sticky {
 .nutrition .title p {
     font-size: 1.2em;
     line-height: 28px;
-    color: #696969;
+    /* color: #696969; */
+    color: #afafaf;
 }
 
 .nutrition__video {
@@ -849,6 +851,109 @@ div#small-dialog iframe {
     /* // reduce button opacity if user keeps scrolling */
     opacity: 1;
 }
+
+/* toggle dark-light test */
+.dark-light {
+    position: fixed;
+    bottom: 120px;
+    right: 15px;
+    z-index: 99;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.btn-hide {
+    display: none;
+}
+
+/* .light-btn {
+    display: none;
+} */
+
+.toggle-btn {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    width: 48px;
+    height: 48px;
+    background: #189A46;
+    padding: 0;
+    line-height: 36px;
+    border-radius: 50px;
+    transition: 0.3s ease-out;
+}
+
+.toggle-btn:focus {
+    outline: none;
+    border: none;
+}
+
+.toggle-btn:hover {
+    transform: translateY(-5px);
+}
+
+
+
+/* Dark theme */
+
+/* plans */
+
+body.dark .title h1 {
+    color: #fff;
+}
+
+body.dark .plans {
+    background-color: #222;
+}
+
+body.dark .plans__item {
+    background-color: #151515;
+}
+
+body.dark .plans__top h3 {
+    color: #fff;
+}
+
+body.dark .plans__bottom p {
+    color: #afafaf;
+}
+
+/* nutrition */
+body.dark .nutrition {
+    background-color: #151515;
+}
+
+/* feedbacks */
+body.dark .feedbacks {
+    background-color: #222;
+}
+
+body.dark .feedbacks-item {
+    background-color: #151515;
+}
+
+body.dark .client-name h3 {
+    color: #fff;
+}
+
+/* subscribe */
+body.dark .subscribe {
+    background-color: #151515;
+}
+
+body.dark .subscribe-title {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
 
 
 
