@@ -19,6 +19,6 @@ function toggleTheme(isDark) {
 
 function renderTheme(isDark) {
   document.body.classList.toggle('dark', isDark);
-  darkBtn.classList.toggle('btn-hide', !isDark);
-  lightBtn.classList.toggle('btn-hide', isDark);
+  darkBtn.classList.toggle('btn-hide', isDark);
+  lightBtn.classList.toggle('btn-hide', !isDark);
 }
