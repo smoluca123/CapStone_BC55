@@ -1169,6 +1169,8 @@ body.dark .subscribe-title {
 .dropdown-item:hover::before {
     width: 0px;
 }
+
+
 @media screen and (max-width:1200px) {
     #carousel__content .carousel-caption h1 {
         font-size: 52px;
