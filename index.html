@@ -24,6 +24,21 @@
     <!-- google font -->
     <!-- <link href="https://wp.w3layouts.com/poochcare/wp-content/themes/Pooch-care/assets/css/style-liberty.css" rel="stylesheet"> -->
 
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- main style -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -90,8 +105,8 @@
     </header>
     <section class="carousel__main">
         <div class="overlay"></div>
-        data-ride="carousel"
-        <div id="carousel__content" class="carousel slide" >
+        
+        <div id="carousel__content" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carousel_content" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel_content" data-slide-to="1"></li>
@@ -167,7 +182,7 @@
         <div class="container pt-lg-5 pt-md-4">
             <div class="feature__content">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -181,7 +196,7 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -195,7 +210,7 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -209,7 +224,7 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -223,7 +238,7 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -237,7 +252,7 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-6 col-lg-4 feature-item">
                         <div class="area-box">
                             <div class="icon">
                                 <span>
@@ -683,7 +698,7 @@
         crossorigin="anonymous"></script>
 
 
-        <!-- waypoit -->
+    <!-- waypoit -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -692,6 +707,45 @@
     <script src="./count/jquery.countup.min.js"></script>
     <script>
         $('.counter').countUp();
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $("header").addClass("sticky");
+                } else {
+                    $("header").removeClass(sticky);
+                }
+            });
+        });
+    </script>
+
+    <!-- Magnific Popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".popup-with-zoom-anim").magnificPopup({
+                type: "inline",
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: "auto",
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: "my-mfp-zoom-in"
+            });
+        });
 
     </script>
 
