@@ -1205,6 +1205,11 @@ body.dark .subscribe-title {
         left: 0%;
     }
 }
+@media screen and (max-width:575px) {
+    .area-box{
+        text-align: center;
+    } 
+}
 @media screen and (max-width:443px) {
     #carousel__content .carousel-caption .container {
         text-align: center;
