@@ -641,6 +641,7 @@ header {
         height: auto;
     }
 }
+
 /* nutrition */
 .nutrition .title p {
     font-size: 1.2em;
@@ -1055,7 +1056,7 @@ div#small-dialog iframe {
     right: 15px;
     z-index: 99;
     /* visibility: hidden; */
-    display: none;
+    /* display: none; */
 }
 
 .btn-hide {
@@ -1159,8 +1160,9 @@ body.dark .subscribe-title {
         box-shadow: 0 0 0 0 rgba(15, 162, 66, 0.164), 0 0 0 10px rgba(15, 162, 67, 0.25), 0 0 0 20px rgba(15, 162, 67, 0.25);
     }
 
-    
+
 }
+
 .dropdown-menu {
     text-align: center;
     transform: translate(0);
@@ -1169,6 +1171,7 @@ body.dark .subscribe-title {
 .dropdown-item:hover::before {
     width: 0px;
 }
+
 @media screen and (max-width:1200px) {
     #carousel__content .carousel-caption h1 {
         font-size: 52px;
