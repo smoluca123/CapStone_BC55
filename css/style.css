@@ -1166,9 +1166,6 @@ body.dark .subscribe-title {
 
 }
 
-/* reponsive Hieu */
-
-
 @media screen and (max-width:1200px) {
     #carousel__content .carousel-caption h1 {
         font-size: 52px;
