@@ -1204,6 +1204,10 @@ body.dark .feature .area-box a {
 body.dark .feature .area-box p {
     color: #afafaf;
 }
+body.dark .feature .area-box a:hover {
+    color: #189A46;
+}
+
 /* choose */
 body.dark .choose {
     background-color: #151515;
