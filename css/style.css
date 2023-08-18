@@ -419,6 +419,7 @@ header {
 
 .choose__left img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .choose__right h6 {
@@ -447,6 +448,14 @@ header {
     color: #000c04;
     margin: 15px 0;
     font-weight: 600;
+}
+.choose__right li i {
+    font-size: 10px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #936be80d;
+    margin-right: 10px;
+    color: #189A46;
 }
 
 /* NUMBER */
@@ -1145,10 +1154,68 @@ body.dark .subscribe-title {
 }
 
 
-
-
-
-
+/* Dark-light Hieu */
+/* header */
+body.dark .main-header {
+    background-color:#151515;
+}
+body.dark .nav-item:nth-of-type(2) a,
+body.dark .nav-item:nth-of-type(3) a,
+body.dark .nav-item:nth-of-type(4) a,
+body.dark .nav-item:nth-of-type(5) a,
+body.dark .nav-item:nth-of-type(6) a {
+    color: #fff;
+}
+body.dark .main-header .navInstruction .dropdown-menu {
+    background-color: #151515;
+}
+body.dark .main-header .navInstruction .dropdown-menu .dropdown-item:hover {
+    background-color: #151515;
+    color: #189A46;
+}
+/* about */
+body.dark .about {
+    background-color:#151515;
+}
+body.dark .about h1,
+body.dark .about a {
+    color: #fff;
+}
+body.dark .about a:hover {
+    color: #189A46;
+}
+body.dark .about p {
+    color: #afafaf;
+}
+/* feature */
+body.dark .feature {
+    background-color: #222;
+}
+body.dark .feature .area-box {
+    background-color: #151515;
+}
+body.dark .feature .area-box:hover {
+    background-color: #222;
+}
+body.dark .feature .area-box h4,
+body.dark .feature .area-box a {
+    color: #fff;
+}
+body.dark .feature .area-box p {
+    color: #afafaf;
+}
+/* choose */
+body.dark .choose {
+    background-color: #151515;
+}
+body.dark .choose .choose__right h3,
+body.dark .choose .choose__right ul li span {
+    color: #fff;
+}
+body.dark .choose .choose__right ul li i {
+    color: #189A46;
+    background-color: #936be80d;
+}
 
 
 
