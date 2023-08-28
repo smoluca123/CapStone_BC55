@@ -11,7 +11,7 @@ Task : https://bit.ly/45aCSnO
 
 ## Deploy
 
-https://cap-stone-bc-55.vercel.app/
+https://capstone.smoteam.com/
 
 
 ## Template By W3School
